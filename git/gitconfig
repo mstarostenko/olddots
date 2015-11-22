@@ -1,0 +1,19 @@
+[user]
+	name = Maxim Starostenko
+	email = m.starostenko@office.ngs.ru
+[alias]
+	ec = config --global -e
+	co = checkout
+	cob = checkout -b
+	ci = commit
+    cia = commit --amend
+	st = status
+	histg = log --graph --full-history --all --color \
+        --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short	
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+[core]
+	editor = vim
