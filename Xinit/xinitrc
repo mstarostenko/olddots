@@ -1,0 +1,4 @@
+#!/bin/sh
+xrdb -merge ~/.Xdefaults
+setxkbmap -layout us,ru -variant 'dvp, '
+i3

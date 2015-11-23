@@ -7,6 +7,16 @@
             "~/.vimrc": {
                 "path": "vim/vimrc",
                 "relink": "true"
+            },
+            "~/.Xresources": {
+                "path": "Xresources/Xresources"
+            },
+            "~/.xinitrc": {
+                "path": "Xinit/xinitrc"
+            },
+            "~/.config/fish": {
+                "path": "fish",
+                "relink": "true"
             }
         }
     },
