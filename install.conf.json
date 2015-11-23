@@ -1,0 +1,18 @@
+[
+    {
+        "clean": ["~"]
+    },
+    {
+        "link": {
+            "~/.vimrc": {
+                "path": "vim/vimrc",
+                "relink": "true"
+            }
+        }
+    },
+    {
+        "shell": [
+            ["git submodule update --init --recursive", "Installing submodules"]
+        ]
+    }
+]
