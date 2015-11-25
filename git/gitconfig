@@ -4,7 +4,7 @@
 [alias]
 	ec = config --global -e
 	co = checkout
-	cob = checkout -b
+	conb = checkout -b
 	ci = commit
     cia = commit --amend
 	st = status

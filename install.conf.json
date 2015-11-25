@@ -17,6 +17,18 @@
             "~/.config/fish": {
                 "path": "fish",
                 "relink": "true"
+            },
+            "~/.gitconfig": {
+                "path": "git/gitconfig",
+                "relink": "true"
+            },
+            "~/.i3/config": {
+                "path": "i3/config",
+                "relink": "true"
+            },
+            "~/.local/share/omf/init.fish": {
+                "path": "ohMyFish/init.fish",
+                "relink": "true"
             }
         }
     },
