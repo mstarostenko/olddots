@@ -250,17 +250,12 @@ NeoBundle 'taiansu/nerdtree-ag'
 " But not necessary with syntastics
 " NeoBundle 'walm/jshint.vim'
 
+call neobundle#end()
 
 " Enable Indent in plugins
 filetype plugin indent on
 " Enable syntax highlighting
 syntax on
-
-" TODO
-" Nunu. Stop showing number when cursor moving
-NeoBundle "seletskiy/vim-nunu"
-
-call neobundle#end()
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
@@ -485,12 +480,12 @@ set background=dark
 " colorscheme torte
 " colorscheme gruvbox
 colorscheme solarized
-" let g:gruvbox_contrast_dark = 'soft'
+let g:gruvbox_contrast_dark = 'soft'
 
 hi CursorLine None ctermbg=0
 hi CursorLineNr ctermbg=24
 hi LineNr         ctermbg=0
-hi Directory        ctermfg=215
+hi Directory        ctermfg=81
 " hi Search guibg=LightBlue
 highlight ColorColumn ctermbg=0
 " highlight LineNr ctermfg=64 ctermbg=235

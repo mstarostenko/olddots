@@ -6,29 +6,36 @@
         "link": {
             "~/.vimrc": {
                 "path": "vim/vimrc",
-                "relink": "true"
+                "relink": "true",
+                "force": "true"
             },
             "~/.Xresources": {
-                "path": "Xresources/Xresources"
+                "path": "Xresources/Xresources",
+                "force": "true"
             },
             "~/.xinitrc": {
-                "path": "Xinit/xinitrc"
+                "path": "Xinit/xinitrc",
+                "force": "true"
             },
             "~/.config/fish": {
                 "path": "fish",
-                "relink": "true"
+                "relink": "true",
+                "force": "true"
             },
             "~/.gitconfig": {
                 "path": "git/gitconfig",
-                "relink": "true"
+                "relink": "true",
+                "force": "true"
             },
             "~/.i3/config": {
                 "path": "i3/config",
-                "relink": "true"
+                "relink": "true",
+                "force": "true"
             },
             "~/.local/share/omf/init.fish": {
                 "path": "ohMyFish/init.fish",
-                "relink": "true"
+                "relink": "true",
+                "force": "true"
             }
         }
     },
