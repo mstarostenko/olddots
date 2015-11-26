@@ -83,8 +83,12 @@ function fish_mode_prompt --description "Displays the current mode"
         set_color --background normal normal
         echo '[I]'
       case replace-one
-        set_color --bold red FFFFFF
-        echo '[R] '
+        set_color --background 000000 normal
+        echo '['
+        set_color --background 000000 FF0000
+        echo 'R'
+        set_color --background 000000 normal
+        echo ']'
       case visual
         set_color --bold --background D33682 FFFFFF
         echo '[V]'

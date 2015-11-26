@@ -115,12 +115,13 @@ NeoBundle 'scrooloose/syntastic'
 " let g:WebDevIconsNerdTreeAfterGlyphPagging = '  '
 " let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['nerdtree'] = ''
 
+" Визуальные закладки :marks
+NeoBundle 'kshenoy/vim-signature'
 
 
 
 
 
-" 
 " Allow modification of dir, and may other things
 " Must have
 NeoBundle 'scrooloose/nerdtree'
@@ -139,7 +140,7 @@ NeoBundle 'aufgang001/vim-nerdtree_plugin_open'
 let g:nerdtree_plugin_open_cmd = 'xdg-open'
 
 " Emmet
-NeoBundle 'mattn/emmet-vim/' 
+NeoBundle 'mattn/emmet-vim/'
 
 " Add smart commands for comments like:
 " gcc - Toggle comment for the current line
@@ -380,10 +381,18 @@ imap <expr><CR> neosnippet#expandable_or_jumpable() ?
 
 "-------------------------
 " vim-airline
+"
+" let g:airline_theme_patch_func = 'AirlineThemePatch'
+" function! AirlineThemePatch(palette)
+" if g:airline_theme == 'solarized'
+"     for colors in values(a:palette.inactive)
+"     let colors[3] = 22
+"     endfor
+" endif
+" endfunction
 
 " Colorscheme for airline
-let g:airline_theme='solarized'
-
+let g:airline_theme='badwolf'
 
 " Set custom left separator
 let g:airline_left_sep = '▶'
@@ -482,12 +491,14 @@ set background=dark
 colorscheme solarized
 let g:gruvbox_contrast_dark = 'soft'
 
+
 hi CursorLine None ctermbg=0
 hi CursorLineNr ctermbg=24
 hi LineNr         ctermbg=0
 hi Directory        ctermfg=81
 " hi Search guibg=LightBlue
 highlight ColorColumn ctermbg=0
+" hi Folded ctermbg=8
 " highlight LineNr ctermfg=64 ctermbg=235
 
 nnoremap <F9> :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
@@ -838,7 +849,7 @@ cnoreabbrev qq tabclose
 " starostenco section
 
 " Переключалка на Normal mode
-inoremap jk <ESC> 
+inoremap jk <ESC>
 
 " NERDTree: вкл - выкл NERDTree обозреватель
 map ,t :NERDTreeToggle<CR>
@@ -850,7 +861,7 @@ map ,o :NERDTreeFind<CR>
 " nmap <CR> o<ESC>
 
 " Автокомплит для каталога, в котором лежит текущий файл
-cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%' 
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 
 noremap <silent> <c-s> :update<CR>
